@@ -6,13 +6,21 @@ class Solution:
         #         if sum == target:
         #             return [i,j]
         
-        comp = dict()
+#         comp = dict()
         
-        for i in range(len(nums)):
-            num = nums[i]
-            c = target - num
+#         for i in range(len(nums)):
+#             num = nums[i]
+#             c = target - num
             
-            if nums[i] in comp:
-                return [comp[num],i]
-            else: 
-                comp[c] = i
+#             if nums[i] in comp:
+#                 return [comp[num],i]
+#             else: 
+#                 comp[c] = i
+                
+        h = {}
+        for i , num in enumerate(nums):
+            n = target - num
+            if n not in h:
+                h[num] = i
+            else:
+                return [h[n] , i]
