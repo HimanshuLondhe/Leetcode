@@ -17,7 +17,7 @@ def fibonacci(n : int ):			#space efficient
 print(fibonacci(5))
 
 
-def fibb(x):						# recursive 
+def fibb(x):						# recursive  : 2^n
     if x<=0:
         return 0 
     elif(x == 1): 
