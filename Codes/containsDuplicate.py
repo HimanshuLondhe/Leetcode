@@ -5,7 +5,7 @@ def dup(x):                                               #Brute Force O(n^2)
                 return True
     return False        
 
-def dup1(x):                                              #Dictionary  
+def dup1(x):                                              #Dictionary   O(n)
     h = {}
     for i in x:
         if i in h:
